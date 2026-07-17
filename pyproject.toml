@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "box-pleating-explorer"
+version = "0.1.0"
+authors = [
+    { name = "Coleman Lai", email = "colemancflai@yahoo.com" },
+]
+description = "Tools and datasets for characterizing locally-valid box-pleated crease patterns"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "box-pleating>=1.0.1",
+    "matplotlib",
+    "numpy",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Googolplexic/box-pleating-explorer"
+Issues = "https://github.com/Googolplexic/box-pleating-explorer/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mvp"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
