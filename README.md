@@ -5,7 +5,7 @@ crease patterns. Crease patterns are sampled with Wave Function Collapse over a
 catalogue of valid box-pleated vertex templates, with local validity (Maekawa,
 Kawasaki, big-little-big) enforced by construction.
 
-This project builds on the [`box-pleating`](../box-pleating) library.
+This project builds on the [`box-pleating`](https://github.com/Googolplexic/box-pleating) library.
 
 ## Status
 
